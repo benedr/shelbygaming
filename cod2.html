@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link href="Screenshot_20241120_091623_Chrome.jpg"  rel="icon">
+
+
+
+  <title>Call of Duty Warzone Tournament</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .flier {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      border: 1px solid #333;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .background {
+      position: absolute;
+      inset: 0;
+      background-image: url('/placeholder.svg?height=600&width=800');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      background-image: url(cod\ 2.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-blend-mode: darken;
+      background-color: rgba(13, 11, 11, 0.511);
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #fbbf24;
+    }
+    h1 span {
+      display: block;
+      color: #fff;
+      margin-top: 0.25rem;
+    }
+    .description {
+      text-align: center;
+      font-size: 1.125rem;
+      color: white;
+      max-width: 36rem;
+      margin: 0 auto 2rem;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .info-item {
+      background-color: rgba(24, 24, 27, 0.5);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .info-item svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.5rem;
+      fill: #fbbf24;
+    }
+    .tournament-format {
+      background-color: rgba(24, 24, 27, 0.5);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .tournament-format h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .tournament-format ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: #d4d4d8;
+    }
+    .button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      background-color: #fbbf24;
+      color: #000;
+      transition: background-color 0.3s;
+      margin: 1rem auto;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #f59e0b;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #71717a;
+    }
+
+    .input-group {
+      margin-bottom: 1rem;
+    }
+    .input-label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #fbbf24;
+    }
+    .input-field {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #333;
+      background-color: rgba(61, 61, 68, 0.5);
+      color: #fff;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .input-field:focus {
+      border-color: #fbbf24;
+    }
+    @media (min-width: 640px) {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flier">
+    <div class="background"></div>
+    <div class="content">
+      <h1>CALL OF DUTY <span>MOBILE TOURNAMENT</span></h1>
+      <p class="description">Compete against the best players in an intense battle royale showdown</p>
+      <div class="info-grid">
+        <!-- <div class="info-item">November 22, 2024</div>
+        <div class="info-item">₦30,000 Prize Pool</div>
+        <div class="info-item">₦500 Entry Fee</div>
+        <div class="info-item">Online Event</div> -->
+        <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            November 24,2024
+        </div>
+        <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+            #50,000 Prize Pool
+        </div>
+        <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            #1,000 Entry fee
+        </div>
+        <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Online Event
+        </div>
+      </div>
+      <div class="tournament-format">
+        <h2>Tournament Information</h2>
+        <ul>
+          <li>Must have an up-to-date COD mobile app</li>
+          <li>Can come as solo or with a partner</li>
+          <li>Registration fee is One Thousand Naira only (#1,000)</li>
+          <li>Winner get cash price of Fifty Thousand Naira Only (#50,000) Naira </li>
+          <li>More info available after registration</li>
+        </ul>
+      </div>
+
+      
+    <!-- email -->
+      <form id="paymentForm">
+        <div class="input-group">
+          <label for="customerEmail" class="input-label">Enter your email</label>
+          <input type="email" id="customerEmail" class="input-field" placeholder="e.g. john.doe@example.com" required>
+        </div>
+        <button type="submit" class="button">Register Now with Paystack</button>
+      </form>
+
+      <!-- email -->
+
+
+      <!-- <a href="#" id="paystackBtn" class="button">Register Now with Paystack</a> -->
+      <p class="footer">Registration closes November 23, 2024 • All skill levels are welcomed</p>
+    </div>
+  </div>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script>
+
+
+
+
+
+
+
+
+
+const paymentForm = document.getElementById('paymentForm');
+    paymentForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = document.getElementById('customerEmail').value;
+
+      if (!email) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      const handler = PaystackPop.setup({
+        key: 'pk_live_586c3fcebfc8347bcf88288da1a12b797c2745f7', // Replace with your public key
+        email: email,
+        amount: 1000 * 100, // Amount in kobo
+        currency: 'NGN',
+        callback: function (response) {
+          const whatsappNumber = '447947983274';
+          const message = `Hello, I just made a payment. My payment reference is ${response.reference}`;
+          const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+          window.location.href = whatsappURL;
+        },
+        onClose: function () {
+          alert('Transaction was not completed.');
+        }
+      });
+      handler.openIframe();
+    });
+
+
+
+
+
+
+
+
+
+
+
+    // const paystackBtn = document.getElementById('paystackBtn');
+    // paystackBtn.addEventListener('click', function (e) {
+    //   e.preventDefault();
+    //   const handler = PaystackPop.setup({
+    //     key: 'pk_live_586c3fcebfc8347bcf88288da1a12b797c2745f7',
+    //     email: 'customer@example.com',
+    //     amount: 1000 * 100,
+    //     currency: 'NGN',
+    //     callback: function (response) {
+    //       const whatsappNumber = '447947983274';
+    //       const message = `Hello, I just made a payment. My payment reference is ${response.reference}`;
+    //       const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    //       window.location.href = whatsappURL;
+    //     },
+    //     onClose: function () {
+    //       alert('Transaction was not completed.');
+    //     }
+    //   });
+    //   handler.openIframe();
+    // });
+  </script>
+</body>
+</html>
